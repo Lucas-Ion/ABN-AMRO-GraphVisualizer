@@ -18,11 +18,11 @@ https://github.com/Lucas-Ion/ABN-AMRO-GraphVisualizer/assets/65054476/907b9023-b
 ## To run it yourself :)
 
 Please first clone the repo,
--Then create two terminal windows,
--In the first window navigate to the backend folder, and run:
--`npm install`
--`nodemon app.js`
--In the second window navigate to the frontend folder, and run:
--`npm install`
--`npm run dev`
+- Then create two terminal windows,
+- In the first window navigate to the backend folder, and run:
+- `npm install`
+- `nodemon app.js`
+- In the second window navigate to the frontend folder, and run:
+- `npm install`
+- `npm run dev`
 
