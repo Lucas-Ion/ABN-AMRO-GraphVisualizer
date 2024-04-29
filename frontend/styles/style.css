@@ -1,0 +1,172 @@
+/* style.css */
+
+html,
+body {
+  display: flex;
+  /* enables Flexbox */
+  justify-content: center;
+  /* centers content horizontally */
+  align-items: center;
+  /* centers content vertically */
+  margin: 0;
+  /* removes default margin */
+  height: 100vh;
+  /* full viewport height */
+  width: 100vw;
+  /* full viewport width */
+  overflow: hidden;
+  /* prevent scrolling */
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  /* setting a linear gradient background with some of my favourite colours :) */
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* center the content horizontally */
+  align-items: center;
+  /* center the content vertically */
+}
+
+.row,
+.col-md-8,
+.col-md-4 {
+  height: 100%;
+}
+
+#graph {
+  width: 90vw;
+  /* 90% of the viewport width */
+  height: 90vh;
+  /* 90% of the viewport height */
+  border-radius: 25px;
+
+}
+
+.node:hover rect {
+  stroke: #dd5f7f;
+  stroke-width: 3px;
+  cursor: pointer;
+}
+
+.node:hover text {
+  cursor: pointer;
+}
+
+.node.selected rect {
+  stroke: #22c453;
+  /* change the color to indicate selection */
+  stroke-width: 3px;
+  /* make the stroke wider to highlight */
+}
+
+.toast .btn-close {
+  position: relative;
+  top: 0px;
+  right: 10px;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}

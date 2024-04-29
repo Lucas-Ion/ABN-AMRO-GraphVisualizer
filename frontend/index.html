@@ -1,0 +1,48 @@
+<!-- OUR INDEX.HTML! -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABN AMRO Coding Challenge</title>
+  <!-- Include the ABN AMRO Icon from within public -->
+  <link rel="shortcut icon" type="image/x-icon" href="./public/ABN AMRO Icon.png" />
+  <!-- Include Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include the css style sheet -->
+  <link href="./styles/style.css" rel="stylesheet">
+  <!-- Include main.js file -->
+  <script type="module" src="main.js"></script>
+  <!-- Include D3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Include Bootstrap JavaScript for Toasts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- a container with our graph -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <svg id="graph"></svg>
+      </div>
+    </div>
+  </div>
+  <!-- defining the Toast (popup) component structure -->
+  <div class="toast-container position-fixed top-0 start-0 p-3">
+    <div id="nodeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000000">
+      <div class="toast-header">
+        <strong class="me-auto"> 🌲 Node Information</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        <h3 id="toastTitle"></h3>
+        <p id="toastDescription"></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

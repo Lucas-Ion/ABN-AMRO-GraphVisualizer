@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: lucasion17/backend:latest
+        ports:
+        - containerPort: 3000
+        env:
+          - name: NEO4J_URI
+            value: "bolt://neo4j-service:7687"
+          - name: NEO4J_USER
+            value: "neo4j"
+          - name: NEO4J_PASSWORD
+            value: "rN9!f@3$WbV1^yZo"
