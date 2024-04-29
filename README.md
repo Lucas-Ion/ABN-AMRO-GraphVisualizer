@@ -1,4 +1,4 @@
-# ABN AMRO Junior Developer Coding Challenge 🚀 
+# ABN AMRO Junior Developer Coding Challenge
 # [Access the deployed site here by clicking here 🛜](https://abn-amro-coding-frontend.onrender.com/)
 
 ## Project Overview ✨ 
