@@ -2,7 +2,7 @@
 
 export async function fetchData() {
     try {
-        const response = await fetch('http://localhost:3000/api/nodes');
+        const response = await fetch('https://abn-amro-graphvisualizer.onrender.com/api/nodes');
         // const response = await fetch('http://abn-amro-coding.tech/api/nodes');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
