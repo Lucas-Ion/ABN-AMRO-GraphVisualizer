@@ -16,7 +16,7 @@ async function getAllNodes() {
         id: record.get('node').identity.toInt(),
         name: node.name,
         description: node.description,
-        parent: record.get('parentName') || ""  // Handle no parent case
+        parent: record.get('parentName') || ""  // handle no parent case, this is important in the frontend to ensure no rendering errors
       };
     });
   } finally {

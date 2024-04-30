@@ -17,11 +17,11 @@ export class GraphView {
             .attr("height", 600)
             .append("g")
             .attr("transform", "translate(50,50)");
-
+        // ensure lines are visually understandable
         const diagonal = (source, target) => {
             return `M ${source.y} ${source.x} H ${source.y + (target.y - source.y) / 2} V ${target.x} H ${target.y}`;
         };
-
+        // build out the graph links, nodes, and text
         svg.selectAll(".link")
             .data(treeData.links())
             .enter().append("path")

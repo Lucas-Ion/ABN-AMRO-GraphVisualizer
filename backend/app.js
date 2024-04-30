@@ -1,16 +1,16 @@
 /* app.js */
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
-// Middleware setup
+// middleware setup
 app.use(express.json()); // for parsing application/json
 app.use(cors()); // enable CORS for all routes and origins
 
 // import routes
 const nodeRoutes = require('./routes/nodeRoutes');
 
-// root route
 app.get('/', (req, res) => {
     res.send('Welcome to the Backend Server! Access /api/nodes to interact with Neo4j.');
 });

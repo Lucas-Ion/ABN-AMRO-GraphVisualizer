@@ -4,9 +4,9 @@ module.exports = {
     presets: [
       ['@babel/preset-env', {
         targets: {
-          node: 'current',  // target the current version of Node.js
+          node: 'current',
         },
-        modules: 'commonjs'  // transpile ES modules to CommonJS for Node.js compatibility
+        modules: 'commonjs'  
       }]
     ],
   };

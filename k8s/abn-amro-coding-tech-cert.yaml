@@ -2,11 +2,11 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: abn-amro-coding-tech-tls
-  namespace: default  # namespace where the Ingress is
+  namespace: default  
 spec:
-  secretName: abn-amro-coding-tech-tls  # this secret will store the issued certificate
+  secretName: abn-amro-coding-tech-tls  
   issuerRef:
-    name: letsencrypt-prod  # reference to the ClusterIssuer or Issuer
+    name: letsencrypt-prod  
     kind: ClusterIssuer
   dnsNames:
-  - "abn-amro-coding.tech"  # list of DNS names this certificate will be valid for
+  - "abn-amro-coding.tech"  

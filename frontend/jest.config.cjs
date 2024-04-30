@@ -5,8 +5,8 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest', 
     '^.+\\.m?js$': 'babel-jest', 
   },
-  testEnvironment: 'node', // default test environment is Node.js
-  // specify environment overrides for specific test files or suites
+  testEnvironment: 'node', // setting the defalt test environment to Node.js
+  
   testEnvironmentOptions: {
     '.*views/.*': 'jsdom',
     '.*utils/.*': 'jsdom',

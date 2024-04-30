@@ -3,7 +3,6 @@
 import { Toast } from 'bootstrap';
 
 export function showNodeInfo(event, nodeData) {
-    // deselect any previously selected nodes
     d3.selectAll('.node.selected').classed('selected', false);
 
     // select the current node
@@ -19,11 +18,11 @@ export function showNodeInfo(event, nodeData) {
     });
     toast.show();
 
-    // setup to remove selection when toast is closed
+    // remove selection when toast is closed
     const removeSelection = () => {
         currentNode.classed('selected', false);
     };
 
-    // attach the event listener to handle toast closure
+    // attach the event listener to handle closure
     toastEl.addEventListener('hidden.bs.toast', removeSelection, { once: true });
 }

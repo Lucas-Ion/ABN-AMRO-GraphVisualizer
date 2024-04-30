@@ -3,19 +3,12 @@
 html,
 body {
   display: flex;
-  /* enables Flexbox */
   justify-content: center;
-  /* centers content horizontally */
   align-items: center;
-  /* centers content vertically */
   margin: 0;
-  /* removes default margin */
   height: 100vh;
-  /* full viewport height */
   width: 100vw;
-  /* full viewport width */
   overflow: hidden;
-  /* prevent scrolling */
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   /* setting a linear gradient background with some of my favourite colours :) */
 }
@@ -24,9 +17,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  /* center the content horizontally */
   align-items: center;
-  /* center the content vertically */
 }
 
 .row,
@@ -37,9 +28,7 @@ body {
 
 #graph {
   width: 90vw;
-  /* 90% of the viewport width */
   height: 90vh;
-  /* 90% of the viewport height */
   border-radius: 25px;
 
 }
@@ -56,9 +45,7 @@ body {
 
 .node.selected rect {
   stroke: #22c453;
-  /* change the color to indicate selection */
   stroke-width: 3px;
-  /* make the stroke wider to highlight */
 }
 
 .toast .btn-close {
